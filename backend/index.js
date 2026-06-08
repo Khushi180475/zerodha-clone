@@ -14,8 +14,7 @@ app.use(cors({
   origin: [
     "http://localhost:3001",
     "http://localhost:3000",
-    "https://zerodha-frontend.vercel.app",
-    "https://zerodha-dashboard.vercel.app"
+    "https://zerodha-clone-kappa-liard.vercel.app"
   ]
 }));
 
