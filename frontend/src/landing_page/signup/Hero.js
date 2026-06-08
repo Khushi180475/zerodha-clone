@@ -77,7 +77,7 @@ function Hero() {
                         {success && (
                             <div className="alert alert-success py-2 small">
                                 {success}{' '}
-                                <a href="http://localhost:3000/login" className="fw-semibold">
+                                <a href="https://zerodha-clone-avx6-fr71k1pfr-khushi-aggarwal-s-projects.vercel.app/login" className="fw-semibold">
                                     Login here →
                                 </a>
                             </div>
