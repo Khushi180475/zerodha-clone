@@ -28,7 +28,7 @@ function Login() {
         setLoading(true);
 
         try {
-            const res = await axios.post('http://localhost:5000/api/auth/login', {
+            const res = await axios.post('https://zerodha-clone-bozv.onrender.com/api/auth/login', {
                 email,
                 password,
             });

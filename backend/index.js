@@ -10,7 +10,14 @@ const app = express();
 
 // ─── Middleware ───────────────────────────────────────────
 // Allows frontend (localhost:3000) to talk to backend (localhost:5000)
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:3001",
+    "http://localhost:3000",
+    "https://zerodha-frontend.vercel.app",
+    "https://zerodha-dashboard.vercel.app"
+  ]
+}));
 
 // Allows Express to read JSON data sent from frontend
 app.use(express.json());

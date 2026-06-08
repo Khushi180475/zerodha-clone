@@ -9,7 +9,7 @@ const Orders = () => {
   useEffect(() => {
     const token = localStorage.getItem("token");
     axios
-      .get("http://localhost:5000/api/orders", {
+      .get("https://zerodha-clone-bozv.onrender.com/api/orders", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => {

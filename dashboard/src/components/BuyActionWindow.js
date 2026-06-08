@@ -17,7 +17,7 @@ const BuyActionWindow = ({ uid }) => {
     const token = localStorage.getItem("token");
     try {
       await axios.post(
-        "http://localhost:5000/api/orders",
+        "https://zerodha-clone-bozv.onrender.com/api/orders",
         {
           name: uid,
           qty: Number(stockQuantity),
